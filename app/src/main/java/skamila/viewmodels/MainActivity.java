@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void increaseCounter(){
         mViewModel.setCounter(mViewModel.getCounter() + 1);
-        counter.setText(mViewModel.getCounter());
+        counter.setText(mViewModel.getCounter() + "");
     }
 
     private void decreaseCounter(){
         mViewModel.setCounter(mViewModel.getCounter() - 1);
-        counter.setText(mViewModel.getCounter());
+        counter.setText(mViewModel.getCounter() + "");
     }
 
     private void setCounter(int number){
